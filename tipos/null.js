@@ -1,5 +1,5 @@
 "use strict";
 (function () {
-    var isActive = null;
+    var isActive = true;
     console.log(isActive);
 })();
