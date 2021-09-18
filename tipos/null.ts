@@ -1,4 +1,4 @@
 (() => {
-    let isActive: boolean =null; 
+    let isActive: boolean =true; 
     console.log(isActive);
 })()
