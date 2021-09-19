@@ -12,3 +12,4 @@
     };
     console.log(flash.getName());
 })();
+//# sourceMappingURL=type.js.map

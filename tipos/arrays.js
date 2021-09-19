@@ -5,3 +5,4 @@
     villanos.forEach(function (e) { return console.log(e.toUpperCase()); });
     console.log(numbers);
 })();
+//# sourceMappingURL=arrays.js.map

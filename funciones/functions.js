@@ -9,3 +9,4 @@
     console.log(returnName());
     console.log(activeBati());
 })();
+//# sourceMappingURL=functions.js.map

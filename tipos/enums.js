@@ -10,3 +10,4 @@
     console.log({ currentAudio: currentAudio });
     console.log(AudioLavel);
 })();
+//# sourceMappingURL=enums.js.map
