@@ -22,6 +22,15 @@
             super(name,realName);
                 console.log("Constructor Xmen");
         }
+
+        get fullName(){
+            return `${this.name} - ${ this.realName }`;
+        }
+
+        set fullName(name: string){
+            this.name = name;
+        }
+
         public getFullNameXmen(){
             console.log(super.getFullName());
         }
@@ -30,7 +39,9 @@
 
 
     const woll = new Xmen("Wolverine", 'Logan',true);
-    console.log(woll);
+    //onsole.log(woll.fullName);
+    woll.fullName = "Julio";
+    // console.log(woll.fullName);
     woll.getFullNameXmen()
 
 })()

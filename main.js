@@ -36,12 +36,18 @@
             this.isMutant = isMutant;
             console.log("Constructor Xmen");
         }
+        get fullName() {
+            return `${this.name} - ${this.realName}`;
+        }
+        set fullName(name) {
+            this.name = name;
+        }
         getFullNameXmen() {
             console.log(super.getFullName());
         }
     }
     const woll = new Xmen("Wolverine", 'Logan', true);
-    console.log(woll);
+    woll.fullName = "Julio";
     woll.getFullNameXmen();
 })();
 //# sourceMappingURL=main.js.map
