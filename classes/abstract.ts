@@ -21,13 +21,13 @@
     const wolverine = new Xmen("Wolverine","Logan");
     const magento   = new Villian("Magneto","Mage");
 
-    console.log(wolverine.salvarMundo());
-    console.log(magento.conquistarMundo());
+    // console.log(wolverine.salvarMundo());
+    // console.log(magento.conquistarMundo());
 
 
 
     const printName = (character:Mutante) => {
-        console.log(character.name);
+        // console.log(character.name);
     }
 
     printName(wolverine)
