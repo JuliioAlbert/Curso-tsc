@@ -1,5 +1,31 @@
 "use strict";
 (() => {
+    class Mutante {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+        }
+    }
+    class Xmen extends Mutante {
+        salvarMundo() {
+            return `Salvar el mundo!`;
+        }
+    }
+    class Villian extends Mutante {
+        conquistarMundo() {
+            return `Mundo Conquistado!`;
+        }
+    }
+    const wolverine = new Xmen("Wolverine", "Logan");
+    const magento = new Villian("Magneto", "Mage");
+    console.log(wolverine.salvarMundo());
+    console.log(magento.conquistarMundo());
+    const printName = (character) => {
+        console.log(character.name);
+    };
+    printName(wolverine);
+})();
+(() => {
     class Aveger {
         constructor(name, team, realName) {
             this.name = name;
@@ -15,16 +41,12 @@
     }
     Aveger.age = 35;
     const antMan = new Aveger('AntMan', 'Capitan', 'Scott Lang');
-    console.log(antMan);
-    console.log(antMan.bio());
-    console.log(Aveger.getAvgAge());
 })();
 (() => {
     class Aveger {
         constructor(name, realName) {
             this.name = name;
             this.realName = realName;
-            console.log("constructor -> Aveger");
         }
         getFullName() {
             return `${this.name}  ${this.realName}`;
@@ -34,7 +56,6 @@
         constructor(name, realName, isMutant) {
             super(name, realName);
             this.isMutant = isMutant;
-            console.log("Constructor Xmen");
         }
         get fullName() {
             return `${this.name} - ${this.realName}`;
@@ -43,7 +64,6 @@
             this.name = name;
         }
         getFullNameXmen() {
-            console.log(super.getFullName());
         }
     }
     const woll = new Xmen("Wolverine", 'Logan', true);

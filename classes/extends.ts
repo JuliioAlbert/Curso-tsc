@@ -5,7 +5,7 @@
             public name:string,
             public realName:string
         ){
-            console.log("constructor -> Aveger");
+            // console.log("constructor -> Aveger");
 
         }
         protected getFullName(){
@@ -20,7 +20,7 @@
             public isMutant: boolean,
             ){
             super(name,realName);
-                console.log("Constructor Xmen");
+                // console.log("Constructor Xmen");
         }
 
         get fullName(){
@@ -32,7 +32,7 @@
         }
 
         public getFullNameXmen(){
-            console.log(super.getFullName());
+            // console.log(super.getFullName());
         }
         
     }

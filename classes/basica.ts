@@ -22,11 +22,11 @@
     }
 
     const antMan:Aveger = new Aveger('AntMan','Capitan','Scott Lang');
-    console.log(antMan);
+    // console.log(antMan);
 
-    console.log(antMan.bio());
+    // console.log(antMan.bio());
 
 
-    console.log(Aveger.getAvgAge());
+    // console.log(Aveger.getAvgAge());
 
 })()
