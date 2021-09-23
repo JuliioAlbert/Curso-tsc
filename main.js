@@ -33,4 +33,10 @@
     };
     cliente.edad;
 })();
+(() => {
+    let addNumberFunc;
+    addNumberFunc = (a, b) => {
+        return 10;
+    };
+})();
 //# sourceMappingURL=main.js.map
