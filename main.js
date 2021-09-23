@@ -12,6 +12,13 @@
     console.log(myCustomVariable);
 })();
 (() => {
+    class Mutant {
+        mutantPower(id) {
+            return this.name + this.realName;
+        }
+    }
+})();
+(() => {
     const cliente = {
         name: "Julio",
         edad: 23,
